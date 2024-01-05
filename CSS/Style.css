@@ -1,0 +1,128 @@
+:root {
+  --main-color: #004181;
+  --sec-color: #006da8;
+}
+.continer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-image: url(../images/v1016-b-09.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.main {
+  width: 350px;
+  height: 500px;
+  overflow: hidden;
+  background: linear-gradient(to bottom, #0f0c29, var(--main-color), #24243e);
+  border-radius: 10px;
+  box-shadow: 0px 0px 50px #322aca;
+  margin: auto;
+}
+#chk {
+  display: none;
+}
+.signup {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+label {
+  color: #fff;
+  font-size: 2.3em;
+  justify-content: center;
+  display: flex;
+  margin: 60px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+input {
+  width: 80%;
+  background: #e0dede;
+  justify-content: center;
+  display: flex;
+  margin: 20px auto;
+  padding: 10px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+.btn {
+  width: 60%;
+  height: 40px;
+  margin: 10px auto;
+  justify-content: center;
+  display: block;
+  color: #fff;
+  background: var(--sec-color);
+  font-size: 1em;
+  font-weight: bold;
+  margin-top: 20px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  transition: 0.2s ease-in;
+  cursor: pointer;
+}
+.btn:hover {
+  background: #444fe6;
+  color: #fff;
+}
+.login {
+  height: 460px;
+  background: #eee;
+  border-radius: 60% / 10%;
+  transform: translateY(-180px);
+  transition: 0.8s ease-in-out;
+}
+.login label {
+  color: var(--sec-color);
+  transform: scale(0.6);
+}
+
+#chk:checked ~ .login {
+  transform: translateY(-500px);
+}
+#chk:checked ~ .login label {
+  transform: scale(1);
+}
+#chk:checked ~ .signup label {
+  transform: scale(0.6);
+}
+.continer-home {
+  min-height: calc(100vh - 60.8px);
+}
+.welcome {
+   width: 650px;
+   height: 200px;
+   background: linear-gradient(to bottom, #0f0c29, var(--main-color), #24243e);
+   border-radius: 10px;
+   box-shadow: 0px 0px 50px #322aca;
+   color: white;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.my-nav {
+  background-color: var(--main-color) !important;
+  box-shadow: 1px 1px 20px #fff;
+}
+.my-nav a {
+    color: #fff !important;
+}
+.my-nav ul {
+  margin-left: auto;
+}
+.my-nav .logout {
+  border: 3px solid #09c;
+  border-radius: 5px;
+  margin-right: auto;
+  display: inline-block;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
